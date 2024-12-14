@@ -1,0 +1,17 @@
+{
+  "name": "string-to-files-epbm",
+  "version": "0.0.0",
+  "description": "StringToFilesEPBM",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1"
+  },
+  "eslintConfig": {},
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "prompt-sync": "^4.2.0"
+  }
+}
