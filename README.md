@@ -1,3 +1,7 @@
+Certainly! Here's the updated README with the execution policy change instructions included:
+
+---
+
 # JSON-Based Directory and File Creator
 
 This tool allows you to create a structured set of directories and files based on a JSON input. It's perfect for authors or anyone needing to quickly generate organized content structures.
@@ -40,23 +44,25 @@ Before using this tool, ensure you have the following installed:
      npm install
      ```
 
-5. **Change Execution Policy Permanently (Optional)**:
-    If you'd like to change it permanently for all sessions, use this command instead (not generally recommended unless necessary):
+5. **Change Execution Policy (Windows Only)**:  
+    If you're encountering permission issues when running scripts on Windows, you may need to change your PowerShell execution policy temporarily: 
     ```powershell
-    Set-ExecutionPolicy RemoteSigned
+    Set-ExecutionPolicy RemoteSigned –Scope CurrentUser
+    ```
+    This allows locally created scripts to run without being signed by a trusted publisher.
+
+6. **Run Application**: 
+    In VS Code's terminal or any command line interface within your project directory, execute: 
+    ```bash 
+    node app.js 
     ```
 
-6 .**Run Application**
-  – In VS Code's terminal ,execute :
-  ```bash 
-  node app .js 
+7. **Provide Input When Prompted**:  
+    Enter/paste your desired JSON structure when prompted by the application, then press Enter twice to complete the process.
 
+### Example JSON Format
 
-  7 .Provide Input When Prompted :
-– Enter/paste desired JSON structure as instructed then press Enter twice complete process .
-
-Example JSON Format
-json
+```json
 {
   "prompts": {
     "001-prompt1.txt": "This is prompt1",
@@ -70,5 +76,21 @@ json
   "forms": {},
   "ai_profiles": {}
 }
-Troubleshooting
+```
 
+## Troubleshooting
+
+If you encounter any issues while running this application:
+
+- Ensure Node.js is properly installed with configured system path variables.
+- Double-check syntax validity of provided JSON inputs prior submission process initiation.
+  
+Feel free reach out via Issues tab should further assistance be required!
+
+---
+
+### Key Adjustments Made:
+
+1. Added detailed instructions for changing PowerShell execution policy specifically for Windows users who might face script permission issues.
+   
+Let me know if there's anything else you'd like adjusted!
