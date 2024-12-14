@@ -62,8 +62,9 @@ Before using this tool, ensure you have the following installed:
     Enter/paste your desired JSON structure when prompted by the application, then press Enter twice to complete the process.
 
 ### Example JSON Format
-
-```json
+copy from { to }
+click the paste button and enter twice
+```
 {
   "prompts": {
     "001-prompt1.txt": "This is prompt1",
@@ -90,8 +91,21 @@ Feel free reach out via Issues tab should further assistance be required!
 
 ---
 
-### Key Adjustments Made:
+### Building the JSON:
 
-1. Added detailed instructions for changing PowerShell execution policy specifically for Windows users who might face script permission issues.
-   
-Let me know if there's anything else you'd like adjusted!
+When you are in chat building your prompts and stages you can ask for the LLM to convert those to a JSON string for use in this project.
+
+PROMPT: For Steps 001 to 010, Can you make a json string with Prompts in prompts and Stages in stages and add empty folders for content, forms, ai_profiles?
+here is an example of a JSON string like I'm wanting: {
+  "prompts": {
+    "001-prompt1.txt": "This is prompt1",
+    "002-prompt2.txt": "This is prompt2"
+  },
+  "stages": {
+    "001-stage1.json": "{\"title\": \"Brainstorm Premises\", \"description\": \"Generate several book premise ideas based on a genre and themes.\", \"prompts\": [\"001-brainstorm-premise\"], \"output\": \"premises.txt\", \"ai_profile\": \"4olatest.json\"}",
+    "002-stage2.json": "{\"title\": \"Evaluate Premises\",  description :  Choose strongest premise based engagement marketability . , prompts : [ '002-evaluate-premise' ] , output : selected_premise .txt ai_profile : 4olatest .json }"
+  },
+  "content": {},
+  "forms": {},
+  "ai_profiles": {}
+}
