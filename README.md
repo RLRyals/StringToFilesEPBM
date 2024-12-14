@@ -71,9 +71,4 @@ json
   "ai_profiles": {}
 }
 Troubleshooting
-If you encounter any issues while running this application :
 
-– Ensure Node.js properly installed configured system path variables .
-– Double-check syntax validity provided JSON inputs prior submission process initiation .
-
-Feel free reach out via Issues tab should further assistance be required!
