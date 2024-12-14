@@ -20,7 +20,7 @@ Before using this tool, ensure you have the following installed:
 1. **Clone or Download the Project**:
    - Clone this repository using Git:
      ```bash
-     git clone https://github.com/RLRyals/StringToFilesEPBM.git
+     git clone https://github.com/RLRyals/Json2FilesAndFolders.git
      ```
    - Or download it as a ZIP file from GitHub, then extract it.
 
