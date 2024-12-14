@@ -31,6 +31,7 @@ Before using this tool, ensure you have the following installed:
 2. **Open in Visual Studio Code**:
    - Launch Visual Studio Code.
    - Go to `File > Open Folder...` and select the project folder.
+   - Make sure you are in the directory with the app.js and createFilesAndFolders.js files.
 
 3. **Ensure Node.js is Installed**:
    - Verify that Node.js is installed by running `node -v` in any terminal window (you should see a version number).
